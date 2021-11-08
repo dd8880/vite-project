@@ -17,7 +17,7 @@ h2 {
 }
 
 .h1Span {
-  color: #f48d69;
+  color: #3e14d6;
 }
 
 #btn {
@@ -65,8 +65,8 @@ button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--hover-text, var(--primary-color));
-  background: var(--bg, #16152b);
-  border: 2px solid var(--primary-color);
+  background: var(--bg, #16162a);
+  border: none;
   transition: all 0.15s ease-in;
   float: right;
   width: 30%;
@@ -74,22 +74,17 @@ button {
 }
 
 .cancelbtn {
-  --primary-color: #ffc3a4;
+  --primary-color: #16162a;
   justify-self: center;
   cursor: pointer;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
   font-family: inherit;
-  -webkit-appearance: button;
   font-size: 0.75rem;
-  border-radius: 40px;
   padding: 1.1875rem 2.5rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--hover-text, var(--primary-color));
-  background: var(--bg, #16152b);
-  border: 2px solid var(--primary-color);
-  transition: all 0.15s ease-in;
+  background: none;
+  border: none;
   float: left;
   width: 30%;
   margin-left: 10%;
@@ -98,8 +93,13 @@ button {
 @media (hover: hover) {
   button:hover {
     --bg: var(--primary-color);
-    --hover-text: #16152b;
+    --hover-text: #16152a;
   }
+}
+
+.cancelbtn:hover {
+  text-decoration: underline 1px #16162a;
+  text-underline-offset: 4px;
 }
 
 /* .regbtn {
@@ -113,7 +113,7 @@ button {
 
 /*add padding to container elements*/
 .container {
-  padding: 25px;
+  padding: 30px;
   height: auto;
   width: auto;
 }
