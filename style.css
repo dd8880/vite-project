@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "sharpiro";
+  src: url("fonts/sharpiro-regular.woff2"), url("fonts/sharpiro-bold.woff2"), url("fonts/uniform-pro-con-black.woff2"), url("fonts/uniform-pro-con-medium.woff2");
+}
+
+body {
+  font-family: "sharpiro";
+}
+
 #btn {
   font-size: 25px;
   margin: 0;
@@ -30,23 +39,68 @@ button {
 }
 
 .regbtn {
+  --primary-color: #ffc3a4;
+  justify-self: center;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: inherit;
+  -webkit-appearance: button;
+  font-size: 0.75rem;
+  border-radius: 40px;
+  padding: 1.1875rem 2.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hover-text, var(--primary-color));
+  background: var(--bg, #16152b);
+  border: 2px solid var(--primary-color);
+  transition: all 0.15s ease-in;
+  float: right;
+  width: 30%;
+  margin-right: 10%;
+}
+
+.cancelbtn {
+  --primary-color: #ffc3a4;
+  justify-self: center;
+  cursor: pointer;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-family: inherit;
+  -webkit-appearance: button;
+  font-size: 0.75rem;
+  border-radius: 40px;
+  padding: 1.1875rem 2.5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--hover-text, var(--primary-color));
+  background: var(--bg, #16152b);
+  border: 2px solid var(--primary-color);
+  transition: all 0.15s ease-in;
+  float: left;
+  width: 30%;
+  margin-left: 10%;
+}
+
+@media (hover: hover) {
+  button:hover {
+    --bg: var(--primary-color);
+    --hover-text: #16152b;
+  }
+}
+
+/* .regbtn {
   padding: 14px 20px;
   background-color: cornflowerblue;
-}
+} */
+
 /*set styles for the cancel button*/
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #ff2e00;
-}
+
 /*float cancel and signup buttons and add an equal width*/
-.cancelbtn,
-.regbtn {
-  float: left;
-  width: 50%;
-}
+
 /*add padding to container elements*/
 .container {
-  padding: 16px;
+  padding: 25px;
 }
 /*define the modal’s background*/
 
