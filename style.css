@@ -7,6 +7,19 @@ body {
   font-family: "sharpiro";
 }
 
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.h1Span {
+  color: #f48d69;
+}
+
 #btn {
   font-size: 25px;
   margin: 0;
@@ -101,7 +114,44 @@ button {
 /*add padding to container elements*/
 .container {
   padding: 25px;
+  height: auto;
+  width: auto;
 }
+
+.gameType {
+  text-decoration: underline 4px #f48d69;
+  text-underline-offset: 8px;
+}
+
+.games {
+  text-decoration: underline 4px #6259fa;
+  text-underline-offset: 8px;
+}
+
+.areas {
+  text-decoration: underline 4px #5be080;
+  text-underline-offset: 8px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-left: 0;
+}
+
+fieldset {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: none;
+}
+
+.clearfix {
+  margin-top: 50px;
+}
+
 /*define the modal’s background*/
 
 .modal {
@@ -123,7 +173,7 @@ button {
   background-color: #fefefe;
   margin: 5% auto 15% auto;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
 }
 /*define the close button*/
 
