@@ -1,4 +1,5 @@
 var modal = document.getElementById("id01");
+const regbtn = document.querySelector(".regbtn");
 
 /* const confetti = require("canvas-confetti");
 import confetti from "canvas-confetti"; */
@@ -9,16 +10,11 @@ window.onclick = function (event) {
   }
 };
 
-document.querySelector(".regbtn").addEventListener("click", runConfetti);
-
-function runConfetti() {
-  confetti;
-}
-window.onclick = function (event) {
+/* window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-};
+}; */
 
 /* get TYPE */
 
@@ -40,8 +36,6 @@ fetch("https://kea2sem-1270.restdb.io/rest/game-info ", {
       document.querySelector(".game-info-types").innerHTML += '<label><input class="game-info-type" type="checkbox" data-id = "' + t._id + '"  data-count = "' + t.count + '" data-name = "' + t.name + '"/>' + t.name + "</label>";
     });
   });
-
-const regbtn = document.querySelector(".regbtn");
 
 regbtn.addEventListener("click", () => {
   const gameInfo_types = document.getElementsByClassName("game-info-type");
