@@ -10,11 +10,16 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 h2 {
   margin-bottom: 30px;
+  margin-left: 10%;
+}
+
+h3 {
+  margin-left: 10%;
 }
 
 .h1Span {
@@ -60,13 +65,13 @@ button {
   -webkit-font-smoothing: antialiased;
   font-family: inherit;
   -webkit-appearance: button;
-  font-size: 0.75rem;
+  font-size: 1rem;
   border-radius: 40px;
   padding: 1.1875rem 2.5rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--hover-text, var(--primary-color));
-  background: var(--bg, #16162a);
+  background: var(--bg, #6259fa);
   border: none;
   transition: all 0.15s ease-in;
   float: right;
@@ -75,11 +80,11 @@ button {
 }
 
 .cancelbtn {
-  --primary-color: #16162a;
+  --primary-color: #6259fa;
   justify-self: center;
   cursor: pointer;
   font-family: inherit;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 1.1875rem 2.5rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -94,12 +99,12 @@ button {
 @media (hover: hover) {
   button:hover {
     --bg: var(--primary-color);
-    --hover-text: #16152a;
+    --hover-text: #6259fa;
   }
 }
 
 .cancelbtn:hover {
-  text-decoration: underline 1px #16162a;
+  text-decoration: underline 2px #6259fa;
   text-underline-offset: 4px;
 }
 
@@ -134,19 +139,31 @@ button {
   text-underline-offset: 8px;
 }
 
+.listContainer {
+  padding-left: 0;
+  margin-bottom: 60px;
+}
+
 .list {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-
+  padding-left: 0; */
+  width: 80%;
+  margin-left: 10%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding-left: 0;
 }
 
 fieldset {
-  width: 80%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  border: none;
+  width: 100%;
+}
+
+label {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .clearfix {
