@@ -69,8 +69,8 @@ button {
   border: none;
   transition: all 0.15s ease-in;
   float: right;
-  width: 30%;
-  margin-right: 10%;
+  width: 180px;
+  margin-right: 20%;
 }
 
 .cancelbtn {
@@ -86,8 +86,8 @@ button {
   background: none;
   border: none;
   float: left;
-  width: 30%;
-  margin-left: 10%;
+  width: 180px;
+  margin-left: 20%;
 }
 
 @media (hover: hover) {

@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "viteproject",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -9,5 +9,21 @@
   "devDependencies": {
     "sass": "^1.43.4",
     "vite": "^2.6.4"
+  },
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dd8880/vite-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dd8880/vite-project/issues"
+  },
+  "homepage": "https://github.com/dd8880/vite-project#readme",
+  "description": "",
+  "dependencies": {
+    "canvas-confetti": "^1.4.0"
   }
 }
