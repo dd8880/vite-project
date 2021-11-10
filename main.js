@@ -40,6 +40,7 @@ fetch("https://kea2sem-1270.restdb.io/rest/game-info ", {
 regbtn.addEventListener("click", () => {
   const gameInfo_types = document.getElementsByClassName("game-info-type");
   console.log(gameInfo_types);
+  modal.style.display = "none";
 
   for (i = 0; i < gameInfo_types.length; i++) {
     if (gameInfo_types[i].checked) {
@@ -74,6 +75,7 @@ fetch("https://kea2sem-1270.restdb.io/rest/game-info ", {
 regbtn.addEventListener("click", () => {
   const gameInfo_games = document.getElementsByClassName("game-info-game");
   console.log(gameInfo_games);
+  modal.style.display = "none";
 
   for (i = 0; i < gameInfo_games.length; i++) {
     if (gameInfo_games[i].checked) {
@@ -108,6 +110,7 @@ fetch("https://kea2sem-1270.restdb.io/rest/game-info ", {
 regbtn.addEventListener("click", () => {
   const gameInfo_areas = document.getElementsByClassName("game-info-area");
   console.log(gameInfo_areas);
+  modal.style.display = "none";
 
   for (i = 0; i < gameInfo_areas.length; i++) {
     if (gameInfo_areas[i].checked) {
