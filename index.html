@@ -9,147 +9,31 @@
   </head>
   <body>
     <img src="img/SignUpForm(MODAL)_EZONE.png" alt="Ezone Landing Page" />
-
     <button id="btn" onclick="document.getElementById('id01').style.display='block'" style="width: auto">Sign Up</button>
-
     <div id="id01" class="modal">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
       <form class="modal-content animate" action="#">
         <div class="container">
           <h1>Welcome to <span class="h1Span">EZONE!</span></h1>
-
           <h2>Gaming Information</h2>
-
           <h3 class="gameType">Game Type</h3>
           <ul class="list">
             <fieldset>
-              <label for="FPS"> <input id="FPS" name="gametype" type="checkbox" />FPS</label>
-
-              <label for="MMORPG"> <input id="MMORPG" name="gametype" type="checkbox" />MMORPG</label>
-
-              <label for="Sports"> <input id="Sports" name="gametype" type="checkbox" />Sports</label>
-            </fieldset>
-
-            <fieldset>
-              <label for="Racing"> <input id="Racing" name="gametype" type="checkbox" />Racing</label>
-
-              <label for="Tower defense"> <input id="Tower defense" name="gametype" type="checkbox" />Tower defense</label>
-
-              <label for="RTS"> <input id="RTS" name="gametype" type="checkbox" />RTS</label>
-            </fieldset>
-            <fieldset>
-              <label for="Simulation"> <input id="Simulation" name="gametype" type="checkbox" />Simulation</label>
-
-              <label for="Role-playing"> <input id="Role-playing" name="gametype" type="checkbox" />Role-playing</label>
-
-              <label for="Adventure"> <input id="Adventure" name="gametype" type="checkbox" />Adventure</label>
-            </fieldset>
-            <fieldset>
-              <label for="Survival"> <input id="Survival" name="gametype" type="checkbox" />Survival</label>
-
-              <label for="Fighting"> <input id="Fighting" name="gametype" type="checkbox" />Fighting</label>
-
-              <label for="Battle royale"> <input id="Battle royale" name="gametype" type="checkbox" />Battle royale</label>
-            </fieldset>
-            <fieldset>
-              <label for="Rhythm"> <input id="Rhythm" name="gametype" type="checkbox" />Rhythm</label>
-
-              <label for="Platform"> <input id="Platform" name="gametype" type="checkbox" />Platform</label>
+              <ul class="list game-info-types"></ul>
             </fieldset>
           </ul>
-
           <h3 class="games">Games</h3>
           <ul class="list">
-			<fieldset>
-            <label for="CS:GO"> <input id="CS:GO" name="game" type="checkbox" />CS:GO</label>
-
-            <label for="Tekken"> <input id="Tekken" name="game" type="checkbox" />Tekken</label>
-
-            <label for="FIFA"> <input id="FIFA" name="game" type="checkbox" />FIFA</label>
-
-            <label for="Super Mario"> <input id="Super Mario" name="game" type="checkbox" />Super Mario</label>
-		</fieldset>
-		<fieldset>
-            <label for="Fortnite"> <input id="Fortnite" name="game" type="checkbox" />Fortnite</label>
-
-            <label for="Call of Duty"> <input id="Call of Duty" name="game" type="checkbox" />Call of Duty</label>
-
-            <label for="The Sims"> <input id="The Sims" name="game" type="checkbox" />The Sims</label>
-
-            <label for="Mortal Combat"> <input id="Mortal Combat" name="game" type="checkbox" />Mortal Combat</label>
-		</fieldset>
-		<fieldset>
-            <label for="Guitar Hero"> <input id="Guitar Hero" name="game" type="checkbox" />Guitar Hero</label>
-
-            <label for="World of Warcraft"> <input id="World of Warcraft" name="game" type="checkbox" />World of Warcraft</label>
-
-            <label for="Skyrim"> <input id="Skyrim" name="game" type="checkbox" />Skyrim</label>
-
-            <label for="Starcraft"> <input id="Starcraft" name="game" type="checkbox" />Starcraft</label>
-		</fieldset>
-		<fieldset>
-            <label for="Warcraft"> <input id="Warcraft" name="game" type="checkbox" />Warcraft</label>
-
-            <label for="League of Legends"> <input id="League of Legends" name="game" type="checkbox" />League of Legends</label>
-
-            <label for="Dota"> <input id="Dota" name="game" type="checkbox" />Dota</label>
-
-            <label for="Valorant"> <input id="Valorant" name="game" type="checkbox" />Valorant</label>
-		</fieldset>
-		<fieldset>
-            <label for="Left for dead"> <input id="Left for dead" name="game" type="checkbox" />Left for dead</label>
-
-            <label for="Overwatch"> <input id="Overwatch" name="game" type="checkbox" />Overwatch</label>
-
-            <label for="PUBG"> <input id="PUBG" name="game" type="checkbox" />PUBG</label>
-
-            <label for="Diablo"> <input id="Diablo" name="game" type="checkbox" />Diablo</label>
-		</fieldset>
-		<fieldset>
-            <label for="Minecraft"> <input id="Minecraft" name="game" type="checkbox" />Minecraft</label>
+            <fieldset>
+              <ul class="list game-info-games"></ul>
+            </fieldset>
           </ul>
-
           <h3 class="areas">Areas</h3>
-
           <ul class="list">
-			<fieldset>
-            <label for="Hand/eye coordination"> <input id="Hand/eye coordination" name="area" type="checkbox" />Hand/eye coordination</label>
-
-            <label for="Reaction time"> <input id="Reaction time" name="area" type="checkbox" />Reaction time</label>
-
-            <label for="Hearing"> <input id="Hearing" name="area" type="checkbox" />Hearing</label>
-
-            <label for="Vision"> <input id="Vision" name="area" type="checkbox" />Vision</label>
-		</fieldset>
-		<fieldset>
-            <label for="Communication"> <input id="Communication" name="area" type="checkbox" />Communication</label>
-
-            <label for="Multi-tasking"> <input id="Multi-tasking" name="area" type="checkbox" />Multi-tasking</label>
-
-            <label for="Mindset"> <input id="Mindset" name="area" type="checkbox" />Mindset</label>
-
-            <label for="Nutrition"> <input id="Nutrition" name="area" type="checkbox" />Nutrition</label>
-		</fieldset>
-		<fieldset>
-            <label for="Injuries"> <input id="Injuries" name="area" type="checkbox" />Injuries</label>
-
-            <label for="Technology"> <input id="Technology" name="area" type="checkbox" />Technology</label>
-
-            <label for="Physiology"> <input id="Physiology" name="area" type="checkbox" />Physiology</label>
-
-            <label for="Sleep"> <input id="Sleep" name="area" type="checkbox" />Sleep</label>
-		</fieldset>
-		<fieldset>
-            <label for="Stress"> <input id="Stress" name="area" type="checkbox" />Stress</label>
-
-            <label for="Tactical"> <input id="Tactical" name="area" type="checkbox" />Tactical</label>
-
-            <label for="Strategy"> <input id="Strategy" name="area" type="checkbox" />Strategy</label>
-            
-			<label for="Leadership"> <input id="Leadership" name="area" type="checkbox" />Leadership</label>
-		</fieldset>
+            <fieldset>
+              <ul class="list game-info-areas"></ul>
+            </fieldset>
           </ul>
-
           <div class="clearfix">
             <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
             <button type="submit" class="regbtn">Register</button>
@@ -157,36 +41,6 @@
         </div>
       </form>
     </div>
-
     <script src="main.js"></script>
   </body>
-</html>
-	<div id="id01" class="modal">
-		<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
-		<form class="modal-content animate" action="#">
-			<div class="container">
-				
-<h1>Welcome to EZONE!</h1>
-
-<h2>Gaming Information</h2>
-
-<h3>Game Type</h3>
-      <ul class="list game-info-types"></ul>
-
-<h3>Games</h3>
-		<ul class="list game-info-games"></ul>
-
-<h3>Areas</h3>
-	<ul class="list game-info-areas"></ul>
-	
-				<div class="clearfix">
-					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-					<button type="submit" class="regbtn">Register</button>
-				</div>
-			</div>
-		</form>
-	</div>
-
-	<script src="main.js"></script>
-</body>
 </html>
